@@ -1,228 +1,567 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Hazim Portfolio</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hazim portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.css">
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Favicon>
+    <link rel="shortcut icon" href="img/favicon.png"-->
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Reference item-->
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container"><a href="#intro" class="navbar-brand scrollTo">Portfolio</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link link-scroll">My skills</a></li>
+              <li class="nav-item"><a href="#references" class="nav-link link-scroll">My work</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+      <div class="container text-center">
+        <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello!</h1>
+        <p data-animate="slideInUp" class="h3 text-shadow text-400">I am Hazim a Computer Scientist, passionate about AI, Data, and Software Engineering.</p>
+      </div>
+    </section>
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About me</h2>
+        </header>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-6">
+            <p data-animate="fadeInUp" class="lead">A computer science graduate form King Abdulaziz university in KSA, my graduation project was to build a text-to-SQL system with human like responces.</p>
+            <p data-animate="fadeInUp" class="lead">Currently I am engaged in self learning and working on personal projects to improve my current skills and learn new skills.</p>
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+            
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-6">
+              <iframe src="doc/HazimV6.pdf" width="100%" height="500px"></iframe>
+          </div>
+          <!-- div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.jpg" alt="This is me - IT worker" class="image rounded-circle img-fluid" --><!--/div -->
+        </div>
+      </div>
+    </section>
 
-				<div class="top">
+<!-- Skills-->
+    <section id="skills" class="about-section">
+        <div class="container">
+          <header class="text-center">
+            <h2 data-animate="fadeInDown" class="title">Skills</h2>
+          </header>
+          <div class="row">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Hazim Bukhari</h1>
-							<p>Data Scientist</p>
-						</div>
+              <div data-animate="fadeInUp" class="col-lg-6">
+                  <div class="skill-item">
+                      <div class="progress-title">Python</div>
+                      <div class="progress">
+                        <div role="progressbar" style="width: 95%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="progress-title">AI/ML (keras, sklearn)</div>
+                        <div class="progress">
+                          <div role="progressbar" style="width: 85%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                          <div class="progress-title">Data manipulation (numpy, pandas)</div>
+                          <div class="progress">
+                            <div role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="progress-title">Flask</div>
+                            <div class="progress">
+                              <div role="progressbar" style="width: 50%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+                            </div>
+                          </div>
+                </div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+            <div data-animate="fadeInUp" class="col-lg-6"> 
+              <div class="skill-item">
+                <div class="progress-title">Java</div>
+                <div class="progress">
+                  <div role="progressbar" style="width: 80%" aria-valuenow="0" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="progress-title">Data visualization (plotly, matplotlib, data studio)</div>
+                <div class="progress">
+                  <div role="progressbar" style="width: 88%" aria-valuenow="70" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="progress-title">Software engineering</div>
+                <div class="progress">
+                  <div role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="progress-title">English</div>
+                <div class="progress">
+                  <div role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+                </div>
+              </div>
+              <!-- div class="skill-item">
+                <div class="progress-title">SEM</div>
+                <div class="progress">
+                  <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+                </div>
+              </div-->
 
-								2. Standard link (sends the user to another page/site)
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    
+    <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">My work</h2>
+            
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="AI/ML">AI/ML</a></li>
+            <li><a href="#" data-filter="Dashboards">Dashboards</a></li>
+            <li><a href="#" data-filter="Notenooks">Notenooks</a></li>
+            <li><a href="#" data-filter="blog">BlogPosts</a></li>
+            <li><a href="#" data-filter="certi">Certificates</a></li>
+            <li><a href="#" data-filter="other">Other</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto"><span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                <div data-category="AI/ML" class="reference-item col-lg-3 col-md-6">
+                  <div class="reference"><a href="#"><img src="img/Star00.jpg" alt="" class="img-fluid">
+                      <div class="overlay">
+                        <div class="inner">
+                          <h3 class="h4 reference-title">Customer Responce AI WebApp</h3>
+                          <p>Predict customer responce to offers.</p>
+                        </div>
+                      </div></a>
+                    <div data-images="img/Star01.JPG,img/Star02.JPG,img/Star03.JPG" class="sr-only reference-description">
+                      <p>This is a webapp implemntation of the model presented in my <a href="#">Notebook</a> where I aim to predict how customers will react to offers presented to them by the Starbucks app. <a href="https://www.kaggle.com/ihormuliar/starbucks-customer-data">Data set</a>.</p>
+                      <p>Note: the webpage might take a while to load from 30 sec to 1 min I apologize for any inconvenience.</p>
+                      <p class="buttons text-center"><a href="https://customer-responce.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit webapp</a></p>
+                    </div>
+                  </div>
+                </div>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
+                <div data-category="AI/ML" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Stud00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Students Score AI WebApp</h3>
+                            <p>Predict students scores in tests.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Stud01.jpg,img/Stud02.jpg,img/Stud03.jpg" class="sr-only reference-description">
+                        <p>This is a webapp implemntation of the model presented in my <a href="https://www.kaggle.com/elitefrog/predict-scores-95">Notebook</a> where I aim to understand what affects students performance then build a model based on those metrics. <a href="https://www.kaggle.com/kwadwoofosu/predict-test-scores-of-students">Data set</a> and <a href="https://datastudio.google.com/reporting/88b6f6c5-8946-4e96-80d2-4b8d90bde179">Data Studio Dashboard</a>.</p>
+                        <p>Note: the webpage might take a while to load from 30 sec to 1 min I apologize for any inconvenience.</p>
+                        <p class="buttons text-center"><a href="https://score-webapp.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit webapp</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/hazim-bukhari/" target="_blank" rel="noopener noreferrer" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/FancyWhale69" target="_blank" rel="noopener noreferrer" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="docs/HazimV6.pdf" target="_blank" rel="noopener noreferrer" class="icon fa-address-card"><span class="label">CV</span></a></li>
-							<li><a href="mailto: hazim.bukhari@protonmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
+                  <div data-category="AI/ML" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Tita00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Titanic AI WebApp</h3>
+                            <p>Predict if you will survive.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Tita01.jpg,img/Tita02.jpg,img/Tita03.jpg" class="sr-only reference-description">
+                        <p>This is a webapp implemntation of the model presented in my <a href="https://www.kaggle.com/elitefrog/titanic-analysis">Notebook</a> where I aim to understand what affects survival rates on the ship then build a model based on those metrics. <a href="https://www.kaggle.com/c/titanic">Data set</a>.</p>
+                        <p>Note: the webpage might take a while to load from 30 sec to 1 min I apologize for any inconvenience.</p>
+                        <p class="buttons text-center"><a href="https://titanic-webapp-fw.herokuapp.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit webapp</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-		<!-- Main -->
-			<div id="main">
+                  <div data-category="certi" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Certi00.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Udacity Data Science nano-degree</h3>
+                            
+                          </div>
+                        </div></a>
+                      <div data-images="#" class="sr-only reference-description">
+                        <iframe src="doc/Data_Scientist.pdf#toolbar=0" width="100%" height="500px"></iframe>
+                      </div>
+                    </div>
+                  </div>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+                  <div data-category="certi" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference"><a href="#"><img src="img/Certi01.png" alt="" class="img-fluid">
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Udacity AI for Business nano-degree</h3>
+                            </div>
+                          </div></a>
+                        <div data-images="#" class="sr-only reference-description">
+                            <iframe src="doc/AI_for_business_nano_degree.pdf#toolbar=0" width="100%" height="500px"></iframe>
+                        </div>
+                      </div>
+                    </div>
 
-							<header>
-								<h2 class="alt" style="color:rgb(255, 255, 255);font-weight: bold;" > Hi! I'm Hazim, and I'm an aspiring Data Scientist.<br />
-								I have created this site to allow potential employers to check my projects.
-								
-							</header>
-							
-							<footer>
-								<a href="#portfolio" class="button scrolly">portfolio</a>
-							</footer>
+                  <div data-category="Dashboards" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Tweet00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Toxic Tweets Dashboard</h3>
+                            <p>Finding toxic tweets.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Tweet01.jpg,img/Tweet02.jpg,img/Tweet03.jpg" class="sr-only reference-description">
+                        <p>This is a Dashboard to present my work in this <a href="https://www.kaggle.com/elitefrog/classify-tweets-acc-94">Notebook</a> where I aim to understand what are the most common words found in toxic tweets and trying to build an AI model to classify them. <a href="https://www.kaggle.com/ashwiniyer176/toxic-tweets-dataset/">Data set</a>.</p>
+                        <p>WARNING: due to the nature of the data there will be some swear words in the Data Visulaization section if you do not wish to view such words please skip the mentioned section.</p>
+                        <p>Note: the webpage might take a while to load from 30 sec to 1 min I apologize for any inconvenience.</p>
+                        <p class="buttons text-center"><a href="https://toxic-tweets.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit dashboard</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							
-							<p>Welcome to my portfolio here you can check my projects. if you want to know
-								more about a project, click on it for more info.</p>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/CBMTCLD" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pic2.JPG" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/CBMTCLD" target="_blank" rel="noopener noreferrer">Learning Disabilitis</a></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/image_search_engine" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pic3.JPG" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/image_search_engine" target="_blank" rel="noopener noreferrer" class="image fit">Image Search Engine</a></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/DogeCoin_Analasys_And_Deeplearning" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/Doge.png" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/DogeCoin_Analasys_And_Deeplearning" target="_blank" rel="noopener noreferrer" class="image fit">DogeCoin Analysis And DeepLearning</a></h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/text-to-sql-GPT2" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pic4.JPG" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/text-to-sql-GPT2" target="_blank" rel="noopener noreferrer" class="image fit">Text-To-SQL</a></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/titanic_dataset_analysis" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pic5.jpg" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/titanic_dataset_analysis" target="_blank" rel="noopener noreferrer" class="image fit">Titanic Data-set Analysis</a></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://dogecoin-dashborad.herokuapp.com" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/Dashboard.jpg" alt="" /></a>
-										<header>
-											<h3><a href="https://dogecoin-dashborad.herokuapp.com" target="_blank" rel="noopener noreferrer" class="image fit">DogeCoin DashBoard</a></h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/disaster_responce_pipeline" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pic6.JPG" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/disaster_responce_pipeline" target="_blank" rel="noopener noreferrer" class="image fit">Disaster Responce Pipeline</a></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/FancyWhale69/Predict_customer_responce_SB"  target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pic7.jpg" alt="" /></a>
-										<header>
-											<h3><a href="https://github.com/FancyWhale69/Predict_customer_responce_SB" target="_blank" rel="noopener noreferrer" class="image fit">Predict Customer Response</a></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://toxic-tweets.herokuapp.com/"  target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/tweet.jpg" alt="" /></a>
-										<header>
-											<h3><a href="https://toxic-tweets.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="image fit">Toxic Tweets DashBoard</a></h3>
-										</header>
-									</article>
-								</div>
-							</div>
+                  <div data-category="Dashboards" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Doge00.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Doge Coin Dashboard</h3>
+                            <p>Prediction of doge coin prices.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Doge01.jpg,img/Doge02.jpg,img/Doge03.jpg" class="sr-only reference-description">
+                        <p>This is a Dashboard to present my work in this <a href="https://www.kaggle.com/elitefrog/dogecoin-analysis-and-deeplearning">Notebook</a> where I aim to analyse the market trend of Doge coin and build a RNN model to predict future prices. <a href="https://www.kaggle.com/tarandeep97/dogecoin-historical-data20172021">Data set</a>.</p>
+                        <p>Note: the webpage might take a while to load from 30 sec to 1 min I apologize for any inconvenience.</p>
+                        <p class="buttons text-center"><a href="https://dogecoin-dashborad.herokuapp.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit dashboard</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-						</div>
-					</section>
+                  <div data-category="certi" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference"><a href="#"><img src="img/Certi02.jpg" alt="" class="img-fluid">
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Udemy Data Science & ML</h3>
+                            </div>
+                          </div></a>
+                        <div data-images="#" class="sr-only reference-description">
+                            <iframe src="doc/Data_Science_&_ML_with_python_bootcamp.pdf#toolbar=0" width="100%" height="500px"></iframe>
+                        </div>
+                      </div>
+                    </div>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+                  <div data-category="Notenooks" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/TweetN00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Toxic Tweets Notebook</h3>
+                            <p>An analysis of toxic tweets.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="#" class="sr-only reference-description">
+                        <p>The objective of this notebook is to understand what are the common words in toxic/non toxic tweets and what hashtags are associated with said words, finally a classification model will be build to classify future tweets.</p>
+                        <p>WARNING: due to the nature of the data there will be some swear words in the Data Visulaization section if you do not wish to view such words please skip the mentioned section.</p>
+                        <p class="buttons text-center"><a href="https://www.kaggle.com/elitefrog/classify-tweets-acc-94" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit notebook</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+                  <div data-category="Notenooks" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/DogeN00.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Doge Coin Notebook</h3>
+                            <p>Analyse the trends in doge coin.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="#" class="sr-only reference-description">
+                        <p>The objective of this notebook is to analyse doge coin market price and building a model to predict its future price.</p>
+                        
+                        <p class="buttons text-center"><a href="https://www.kaggle.com/elitefrog/dogecoin-analysis-and-deeplearning" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit notebook</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-							<a href="#" class="image featured"><img src="#" alt="" /></a>
-							
-							<p>I am interested in Data Science, Software Engineer, and AI. My passion is to solve problems and help people. 
-								<br>Check my projects in the previous section.</br>
-								<br>Skills: Python, Jave, Machine Learning, Deep Learning, Data Science, Software Engineering</br>
-							check my <a href="docs/HazimV6.pdf" target="_blank" rel="noopener noreferrer">CV</a></p>
-							
+                  <div data-category="Notenooks" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/StarN00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">StarBucks Notebook</h3>
+                            <p>Analyse starbucks customers.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="#" class="sr-only reference-description">
+                          <p>The objective of this notebook is to analyse Starbucks customers and how they respond to offers, then building a model that predict customer responces to different offers.</p>
+                       
+                        <p class="buttons text-center"><a href="https://www.kaggle.com/elitefrog/customer-responce" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit notebook</a></p>
+                      </div>
+                    </div>
+                  </div>
 
-						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+                  <div data-category="Notenooks" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference"><a href="#"><img src="img/StudN00.jpg" alt="" class="img-fluid">
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Students Scores Notebook</h3>
+                              <p>Analyse students performance.</p>
+                            </div>
+                          </div></a>
+                        <div data-images="#" class="sr-only reference-description">
+                            <p>The objective of this notebook is to analyse students test scores and understanding what affects those scores (e.g: family income, public/private school, gender, etc...), then building a model that predict students performance.</p>
+                          
+                          <p class="buttons text-center"><a href="https://www.kaggle.com/elitefrog/predict-scores-95" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit notebook</a></p>
+                        </div>
+                      </div>
+                    </div>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+                  <div data-category="certi" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference"><a href="#"><img src="img/Certi03.jpg" alt="" class="img-fluid">
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Udacity AWS Fundamentals</h3>
+                            </div>
+                          </div></a>
+                        <div data-images="#" class="sr-only reference-description">
+                          <iframe src="doc/AWS_Fundamentals_Udacity.pdf#toolbar=0" width="100%" height="500px"></iframe>
+                        </div>
+                      </div>
+                    </div>
 
-							<p>Email: <a href="mailto: hazim.bukhari@protonmail.com" >hazim.bukhari@protonmail.com</a>
-							   <br>Linkedin: <a href="https://www.linkedin.com/in/hazim-bukhari" target="_blank" rel="noopener noreferrer" >https://www.linkedin.com/in/hazim-bukhari</a></br>
-							   Github: <a href="https://github.com/FancyWhale69" target="_blank" rel="noopener noreferrer" >https://github.com/FancyWhale69</a>
-							   
-							</p>
-							
+                    <div data-category="certi" class="reference-item col-lg-3 col-md-6">
+                        <div class="reference"><a href="#"><img src="img/Certi04.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                              <div class="inner">
+                                <h3 class="h4 reference-title">Coursera Computer Vision Basics</h3>
+                              </div>
+                            </div></a>
+                          <div data-images="#" class="sr-only reference-description">
+                              <iframe src="doc/Computer_Vision_basics_Coursera.pdf#toolbar=0" width="100%" height="500px"></iframe>
+                          </div>
+                        </div>
+                      </div>
 
-						</div>
-					</section>
-			
-			</div>
+                  <div data-category="blog" class="reference-item col-lg-3 col-md-6">
+                      <div class="reference"><a href="#"><img src="img/TitaB00.jpg" alt="" class="img-fluid">
+                          <div class="overlay">
+                            <div class="inner">
+                              <h3 class="h4 reference-title">Titanic Blog post</h3>
+                              <p>An article about the titanic notebook.</p>
+                            </div>
+                          </div></a>
+                        <div data-images="#" class="sr-only reference-description">
+                          <p>In this blogpost I discusse what are the important factors that the survivals of the titanic had like cabin class, age, nobility, etc...</p>
+                          
+                          <p class="buttons text-center"><a href="https://fancywhale69.medium.com/will-you-survive-the-titanic-b96ee8efe725" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit blog</a></p>
+                        </div>
+                      </div>
+                    </div>
 
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				
-			</div>
+                    <div data-category="blog" class="reference-item col-lg-3 col-md-6">
+                        <div class="reference"><a href="#"><img src="img/PandB00.jpg" alt="" class="img-fluid">
+                            <div class="overlay">
+                              <div class="inner">
+                                <h3 class="h4 reference-title">Introduction to pandas Blog post</h3>
+                                <p>A beginners guide to Pandas package.</p>
+                              </div>
+                            </div></a>
+                          <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                            <p>In this blogpost I to help beginners to get used to Pandas important features like reading files, groubing, filtring, etc...</p>
+                            
+                            <p class="buttons text-center"><a href="https://fancywhale69.medium.com/a-beginners-guide-to-pandas-9da84c8184a7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit blogpost</a></p>
+                          </div>
+                        </div>
+                      </div>
 
-	</body>
+                  <div data-category="Notenooks" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/TitaN00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Titanic Notebook</h3>
+                            <p>Analyse surviving factors.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="#" class="sr-only reference-description">
+                        <p>The objective of this notebook is to analyse the common factors between all the survivals of the titanic like age, gender, cabin class, etc..., then build a model to predict the survival of individuals.</p>
+                        
+                        <p class="buttons text-center"><a href="https://www.kaggle.com/elitefrog/titanic-analysis" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit notebook</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-category="AI/ML" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/ImgS00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Image Search Engine</h3>
+                            <p>Building an image search engine.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/ImgS01.jpg,img/ImgS02.jpg,img/ImgS03.jpg" class="sr-only reference-description">
+                        <p>This a project for AI 2 course in King Abdulaziz University, the aim is to build an image search engine and ranking those images by relevance.</p>
+                        <p>This project uses different tensorflow object detection models to try and find a balanced model in terms of speed and accuracy. The github repo contains my code in .ipynb format and the instructions on how to setup everythin.</p>
+                        <p class="buttons text-center"><a href="https://github.com/FancyWhale69/image_search_engine" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit github</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div data-category="AI/ML" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/TexS00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Text-To-SQL</h3>
+                            <p>Translate natrual language to SQL.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/TexS01.gif,img/TexS02.gif" class="sr-only reference-description">
+                        <p>This a graduation project for the Computer Science program in King Abdulaziz University, the aim of the project is to build a Text-to-SQL system where a natural question is converted into SQL then a human like responed is returned to the user.</p>
+                        <p>Uses OpenAI GPT-2 to understand users questions then generating the appropriate SQL and responce to be returned to the user. Note: due to the large file size the project can not be hosted on github you will only the project documentation and diagrams.</p>
+                        <p class="buttons text-center"><a href="https://github.com/FancyWhale69/text-to-sql-GPT2" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit github</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/Ld00.jpg" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Learning Disabilitis</h3>
+                            <p>A program to help children learn.</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/Ld01.jpg,img/Ld02.jpg,img/Ld03.jpg" class="sr-only reference-description">
+                        <p>This a project for advanced programming course in King Abdulaziz University, the aim is to a program that helps children with learning disabilitis by using games and to help teachers to monitor their students performance.</p>
+                        <p>The program is written in java and the complete code is avalibal on github.</p>
+                        <p class="buttons text-center"><a href="https://github.com/FancyWhale69/CBMTCLD" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit github</a></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Customers-->
+    
+    <!-- Contact-->
+    <!--section id="#" data-animate="bounceIn" class="contact-section contact">
+      <div class="container">
+        <header class="text-center">
+          <h2 class="title">Contact me</h2>
+        </header>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="contact-form" method="post" action="">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-outline-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section-->
+    <!-- Map-->
+    
+    <footer class="main-footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-lg-left">
+            <p class="social"><a href="https://www.linkedin.com/in/hazim-bukhari/" target="_blank" rel="noopener noreferrer" class="external facebook wow fadeInUp"><i class="fab fa-linkedin"></i></a> <a href="https://www.kaggle.com/elitefrog" target="_blank" rel="noopener noreferrer" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i class="fab fa-kaggle"></i></a> <a href="https://github.com/FancyWhale69" target="_blank" rel="noopener noreferrer" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fab fa-github"></i></a> <a href="https://fancywhale69.medium.com/" target="_blank" rel="noopener noreferrer" data-wow-delay="0.6s" class="medium wow fadeInUp"><i class="fab fa-medium-m"></i></a> <a href="mailto: hazim.bukhari@protonmail.com" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a> <a href="doc/HazimV6.pdf" target="_blank" rel="noopener noreferrer" data-wow-delay="0.6s" class="resume wow fadeInUp"><i class="fas fa-address-card"></i></a> </p>
+          </div>
+          <!-- /.6-->
+          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
+            <p>© 2021 Hazim. All rights reserved.</p>
+          </div>
+          <div class="col-12 mt-4">
+            <p class="template-bootstrapious">Template by <a href='https://bootstrapious.com/p/bootstrap-carousel'>Bootstrapious</a> & <a href="https://fity.cz/ostrava">Fity</a></p>
+            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="js/front.js"></script>
+  </body>
 </html>
